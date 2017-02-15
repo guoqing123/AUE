@@ -1,0 +1,180 @@
+banner()
+div.clearfix
+// guifan
+#guifan
+  .biaoti
+    .biaoti_lineNONE
+    .biaoti_name(style='font:微软雅黑')
+    .biaoti_name(style='font:微软雅黑')
+      span.biaoti_name36  规范
+      br
+      |           你可以通过以下三个入口找到相应的规范
+      br
+      |           包括:ReachMax、
+      span.biaoti_name(style='font:微软雅黑') RMOS、JoinMax
+      |  ( 具体时间以当时的产品计划为准)
+      br
+    .biaoti_lineNONE
+  #guifan_content
+    // <a target="_blank" href="swing/index.html"><div id="swing"><span class="guifan_txt_class">Swing</span></div></a>
+    a(target='_self', ui-sref='commonUse.text')
+      #web
+        .imgBox
+          img(src='../../images/newImg/common_icon_blue.png', alt='')
+        // <span class="guifan_txt_class">通用交互</span>
+    a(target='_self', href='javascript:void()')
+      #swing
+        .imgBox
+          img(src='../../images/newImg/reachMax.png', alt='')
+        // <span class="guifan_txt_class">ReachMax</span>
+    a(target='_self', href='javascript:void()javascript:void()')
+      #phone
+        .imgBox
+          img(src='../../images/newImg/rmos_logo_blue.png', alt='')
+        // <img src="./pic/use.png" alt="">
+        // <span class="guifan_txt_class">RMOS</span>
+    a(target='_self', href='javascript:void()')
+      #pad
+        .imgBox
+          img(src='../../images/newImg/joinMax.png', alt='')
+        // <span class="guifan_txt_class">JoinMax</span>
+    // <div id="pad"><span class="guifan_txt_class">Pad</span></div>
+// fenxiang
+#fenxiang
+  .biaoti
+    // <div class="biaoti_line"></div>
+    .biaoti_name36 分享
+    br
+    br
+    .biaoti_name
+      | 我们是彼此可以依赖的伙伴，因为爱设计，所以我们在这里，
+      br
+      | 我们的力量来自对专业的信仰，每一个细微之处都值得全心投入。
+    // <div class="biaoti_line"></div>
+  #fenxiangcontent
+    #fenxiang_1.offsets(data-rotate-x='40deg')
+      a(target='_blank', ui-sref='textCon.txt1')
+        #fx_1
+          img(src='../../images/newImg/share1.png', alt='')
+      .fx_summary
+        span.title
+          | 深入了解viewport和px。
+        |             来源：《用户体验部》
+    #fenxiang_2.offsets(data-rotate-x='120deg')
+      a(target='_blank', ui-sref='textCon.txt2')
+        #fx_2
+          img(src='../../images/newImg/share2.png', alt='')
+      .fx_summary
+        span.title
+          | UX Design|如何从设计模式中学习交互设计
+        |             来源：《用户体验部》
+    #fenxiang_3.offsets(data-rotate-x='80deg')
+      a(target='_blank', ui-sref='textCon.txt3')
+        #fx_3
+          img(src='../../images/newImg/share3.png', alt='')
+      .fx_summary
+        span.title
+          | 设计出符合用户预期的体验
+        |             来源：《用户体验部》
+    #fenxiang_4.offsets(data-rotate-x='240deg')
+      a(target='_blank', ui-sref='textCon.txt4')
+        #fx_4
+          img(src='../../images/newImg/share4.png', alt='')
+          // <div class="fx_class">设计趋势</div>
+          // <div class="fx_biaoti">2015-2016年交互体验趋势</div>
+      .fx_summary
+        span.title
+          | 2015-2016年交互体验趋势
+        |             来源：《用户体验部》
+  // //分享
+  #shareMore
+    a(target='_blank', ui-sref='article')
+      | more >
+    // <div class="fx_summary"></div>
+// tuandui
+#tuandui
+  .biaoti
+    .biaoti_linenone
+    .biaoti_name36
+      | 团队
+      br
+      br
+      .biaoti_name
+        | 我们是彼此可以依赖的伙伴，因为爱设计，所以我们在这里，
+        br
+        | 我们的力量来自对专业的信仰，每一个细微之处都值得全心投入。
+    .biaoti_linenone
+  #tuanduicontent
+    .member
+      #mphoto_1
+        span.membertelmail
+          span.membertel M +86 13811380923
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:gongxianfu@addnewer.com') gongxianfu@addnewer.com
+      .membertxt
+        p.membername 龚先福
+        |             用户体验设计
+        p.memberlingyu 负责领域：总体
+    .member
+      #mphoto_2
+        span.membertelmail
+          span.membertel  M +86 13810232746
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:caojinyou@addnewer.com') caojinyou@addnewer.com
+      .membertxt
+        p.membername 曹金友
+        |             用户体验设计
+        p.memberlingyu 负责领域
+    .member
+      #mphoto_3
+        span.membertelmail
+          span.membertel  M +86 18813130671
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:sunshirong@addnewer.com') sunshirong@addnewer.com
+      .membertxt
+        p.membername 孙世荣
+        |             用户体验设计
+        p.memberlingyu 负责领域：
+    .member
+      #mphoto_4
+        span.membertelmail
+          span.membertel  TM +86 17733537335
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:caiguoqing@addnewer.com') caiguoqing@addnewer.com
+      .membertxt
+        p.membername 蔡国庆
+        |             用户体验设计
+        p.memberlingyu 负责领域：
+    .member
+      #mphoto_5
+        span.membertelmail
+          span.membertel  M +86 15710068872
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:lishan@addnewer.com') lishan@addnewer.com
+      .membertxt
+        p.membername 李珊
+        |             用户体验设计
+        p.memberlingyu 负责领域：
+    .member
+      #mphoto_6
+        span.membertelmail
+          span.membertel  M +86 15652432429
+          span.memberemail
+            | Email:
+            br
+            a.a_white(href='mailto:zhengzhanning@addnewer.com') zhengzhanning@addnewer.com
+      .membertxt
+        p.membername 郑占宁
+        |             用户体验设计
+        p.memberlingyu 负责领域：
+#dibu ©2017 AddNewer 用户体验中心
