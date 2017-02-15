@@ -8,7 +8,7 @@ export default function($stateProvider){
     'ngInject';
     $stateProvider.state('homePage',{
         parent: 'myApp',
-        url: '/home',
+        url: '/',
         template:homeTemp,
         controller:homeCtrl,
         controllerAs:'home'

@@ -2,8 +2,8 @@
  * Created by Administrator on 2017/2/15 0015.
  */
 'use strict';
-//import layoutTemp from '../layout/layout.jade'
-//import layoutCtrl from '../layout/layoutController'
+import layoutTemp from '../layout/layout.jade'
+import layoutCtrl from '../layout/layoutController'
 export default function ($stateProvider,$urlRouterProvider, $locationProvider,tooltipsConfProvider) {
     'ngInject';
     $stateProvider
