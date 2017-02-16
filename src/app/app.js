@@ -26,7 +26,7 @@ import '../style/common/modal.styl'
 import homePage from './homePage/index'
 
 const appModule = [
-    /*依赖注入*/ 'ui.router','ui.bootstrap','720kb.tooltips',
+    /*依赖注入*/ 'ui.router','ui.bootstrap','720kb.tooltips','ngAnimate',
     ///*模块属性*/ values,runs,factorys,
     /*栏   目*/ homePage,//commonUse,article,
     ///*组   件*/ components
