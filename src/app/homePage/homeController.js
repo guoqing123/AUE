@@ -1,20 +1,21 @@
 'use strict';
 import 'jquery-smoove/dist/jquery.smoove.min'
 import myModalContent from './myModalContent.html'
-import ModalInstanceCtrl from './ModalInstanceCtrl.js'
+import ModalInstanceCtrl from './ModalInstanceCtrl'
 export default class HomeCtrl{
-    constructor($scope,$modal,$log){
+    constructor($scope,$uibModal,$log){
         'ngInject';
         $(function () {
             $('.offsets').smoove({offset:'10%'});
         });
 
-
+        //
         $scope.items = [ 'item1', 'item2', 'item3' ];
         $scope.open = function() {
-            var modalInstance = $modal.open({
-                templateUrl : myModalContent,
+            var modalInstance = $uibModal.open({
+                template : myModalContent,
                 controller : ModalInstanceCtrl,
+                animation:true,
                 resolve : {
                     items : function() {
                         return $scope.items;
@@ -32,5 +33,20 @@ export default class HomeCtrl{
                 $log.info('Modal dismissed at: ' + new Date());
             });
         };
+
+
+        //let $ctr = this;
+        //$ctr.pop = 'popPage';
+        //$ctr.popClick = function(){
+        //    $uibModal.open({
+        //        template:myModalContent,
+        //        controller:ModalInstanceCtrl,
+        //        resolve : {
+        //            items : function() {
+        //                return $scope.items;
+        //            }
+        //        }
+        //    })
+        //}
     }
 }

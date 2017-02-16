@@ -2,10 +2,12 @@
  * Created by Administrator on 2017/2/15 0015.
  */
 import 'angular';
+import 'jquery';
 import 'angular-ui-router';
 import 'angular-animate';
 import 'angular-ui-bootstrap';
-import 'angular-tooltips'
+import 'angular-tooltips';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //config
 import Routers from './app.config';
@@ -18,8 +20,10 @@ import runs from './app.run'
 
 //iconFont
 import '../images/font/iconfont.css'
+//modal
+import '../style/common/modal.styl'
 //homePage
-import homePage from './homePage/index.js'
+import homePage from './homePage/index'
 
 const appModule = [
     /*依赖注入*/ 'ui.router','ui.bootstrap','720kb.tooltips',
